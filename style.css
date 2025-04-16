@@ -105,7 +105,7 @@ header li a:hover {
 }
 
 .bolhas span {
-    position: absolute;
+    position: relative;
     width: 30px;
     height: 30px;
     background: #ff2d75;
@@ -115,7 +115,7 @@ header li a:hover {
                 0 0 50px #ff2d75,
                 0 0 100px #ff2d75;
     animation: animar calc(150s / var(--i)) linear infinite;
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
 
