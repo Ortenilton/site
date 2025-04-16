@@ -1,6 +1,6 @@
 // Função para o menu mobile
 function animarMenu() {
-    let menuMob = document.querySelector('.menu-mobile')
+    let menuMob = document.querySelector('.menu-mobile');
     if (menuMob.classList.contains('open')) {
         menuMob.classList.remove('open');
     } else {
@@ -8,7 +8,6 @@ function animarMenu() {
     }
 }
 
-// Adiciona evento de click aos links do menu mobile para fechar o menu após clicar
 document.addEventListener('DOMContentLoaded', function() {
     // Configura o funcionamento do menu mobile
     let linksMenu = document.querySelectorAll('.menu-mobile a');
@@ -18,16 +17,32 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Configura as bolhas
-    const bubbles = document.querySelectorAll('.bolhas span');
+    // Configuração das bolhas
+    const bolhasContainer = document.querySelector('.bolhas');
     
-    bubbles.forEach(bubble => {
-        // Posição horizontal aleatória
-        const randomLeft = Math.floor(Math.random() * 100);
-        bubble.style.left = `${randomLeft}%`;
+    // Remove as bolhas estáticas do HTML
+    bolhasContainer.innerHTML = '';
+    
+    // Cria bolhas dinâmicas
+    const numBolhas = 50;
+    
+    for (let i = 0; i < numBolhas; i++) {
+        const bolha = document.createElement('span');
         
-        // Atraso inicial aleatório para criar efeito mais natural
-        const randomDelay = Math.random() * 20;
-        bubble.style.animationDelay = `${randomDelay}s`;
-    });
+        // Propriedades aleatórias
+        const randomLeft = Math.random() * 100;
+        const randomSize = Math.random() * 20 + 10;
+        const randomDuration = Math.random() * 30 + 20;
+        const randomDelay = Math.random() * 10;
+        const randomBottom = Math.random() * 20;
+        
+        bolha.style.setProperty('--i', randomDuration);
+        bolha.style.left = `${randomLeft}%`;
+        bolha.style.width = `${randomSize}px`;
+        bolha.style.height = `${randomSize}px`;
+        bolha.style.animationDelay = `${randomDelay}s`;
+        bolha.style.bottom = `${randomBottom}px`;
+        
+        bolhasContainer.appendChild(bolha);
+    }
 });
