@@ -146,29 +146,5 @@
 
   <!-- Importando Script -->
   <script src="script.js"></script>
-  
-  <!-- Script para as bolhas -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Posiciona aleatoriamente as bolhas horizontalmente
-      const bubbles = document.querySelectorAll('.bolhas span');
-      
-      bubbles.forEach(bubble => {
-        // Posição horizontal aleatória
-        const randomLeft = Math.floor(Math.random() * 100);
-        bubble.style.left = `${randomLeft}%`;
-        
-        // Atraso inicial aleatório para criar efeito mais natural
-        const randomDelay = Math.random() * 20;
-        bubble.style.animationDelay = `${randomDelay}s`;
-      });
-    });
-
-    // Função para o menu mobile (mantida para compatibilidade)
-    function animarMenu() {
-      const menuMobile = document.getElementById('menu-mobile');
-      menuMobile.classList.toggle('open');
-    }
-  </script>
 </body>
 </html>
