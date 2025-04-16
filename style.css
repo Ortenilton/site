@@ -10,12 +10,15 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Header menu */
+/* Header menu - Tamanho reduzido */
 .menu-header {
     background-color: white;
     position: fixed;
     width: 100%;
     z-index: 10;
+    height: 50px;
+    display: flex;
+    align-items: center;
 }
 
 .menu-header nav {
@@ -23,7 +26,8 @@ html {
     flex-direction: row;
     justify-content: center;
     list-style-type: none;
-    padding: 5px 0;
+    padding: 3px 0;
+    width: 100%;
 }
 
 .menu-header ul {
@@ -32,20 +36,20 @@ html {
     justify-content: center;
     margin-left: 5%;
     list-style-type: none;
-    padding: 10px 0;
+    padding: 5px 0;
     width: 85%;
 }
 
 header li a {
     text-decoration: none;
-    padding: 0 30px;
-    font-size: 24px;
+    padding: 0 20px;
+    font-size: 18px;
     color: #525557;
     transition: .3s;
 }
 
 header li a:hover {
-    color: #ff2d75;
+    color: #ff0000;
 }
 
 .redes-sociais {
@@ -53,14 +57,14 @@ header li a:hover {
 }
 
 .redes-sociais img {
-    width: 170px;
+    width: 130px;
 }
 
 /* Container */
 .container {
     min-height: 100vh;
     width: 100%;
-    background-color: #111111;
+    background-color: #000000;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -71,7 +75,7 @@ header li a:hover {
 .container h2 {
     color: white;
     font-size: 60px;
-    margin-top: 220px;
+    margin-top: 180px; /* Ajustado para compensar cabeçalho menor */
     text-align: center;
     position: relative;
     z-index: 2;
@@ -109,13 +113,13 @@ header li a:hover {
     bottom: -100px;
     width: 30px;
     height: 30px;
-    background: #cc0000; /* Alterado de #ff2d75 para vermelho */
+    background: #ff0000;
     border-radius: 50%;
-    box-shadow: 0 0 0 10px #cc000044, /* Alterado de #ff2d7544 */
-                0 0 50px #cc0000,    /* Alterado de #ff2d75 */
-                0 0 100px #cc0000;    /* Alterado de #ff2d75 */
-    animation: animar calc(300s / var(--i)) linear infinite;
-    opacity: 0.75;
+    box-shadow: 0 0 0 10px #ff000044,
+                0 0 50px #ff0000,
+                0 0 100px #ff0000;
+    animation: animar calc(100s / var(--i)) linear infinite;
+    opacity: 0.7;
 }
 
 @keyframes animar {
@@ -136,10 +140,10 @@ header li a:hover {
 }
 
 .bolhas span:nth-of-type(even) {
-    background: #ffffff; /* Alterado de #2dc3ff para branco */
-    box-shadow: 0 0 0 10px #ffffff44, /* Alterado de #2dc3ff44 */
-                0 0 50px #ffffff,    /* Alterado de #2dc3ff */
-                0 0 100px #ffffff;    /* Alterado de #2dc3ff */
+    background: #ffffff;
+    box-shadow: 0 0 0 10px #ffffff44,
+                0 0 50px #ffffff,
+                0 0 100px #ffffff;
 }
 
 /* Seção Short Bio */
@@ -199,7 +203,7 @@ header li a:hover {
 
 /* Container Contato */
 .container-contato {
-    background-color: #111111;
+    background-color: #000000;
     text-align: center;
     padding: 80px 0px;
     color: white;
@@ -236,13 +240,14 @@ footer {
     color: #525557;
 }
 
-/* Menu mobile */
+/* Menu mobile - Tamanho reduzido */
 .menu-mobile {
     display: none;
     background-color: white;
     position: fixed;
     width: 100%;
     z-index: 10;
+    top: 50px; /* Ajustado para altura do cabeçalho */
 }
 
 .menu-mobile nav {
@@ -252,33 +257,26 @@ footer {
 
 .menu-mobile ul {
     list-style-type: none;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     width: 100%;
 }
 
 .menu-mobile li {
     text-decoration: none;
-    padding: 0 30px;
-    font-size: 24px;
+    padding: 0 20px;
+    font-size: 18px;
     color: #525557;
-    padding: 20px 0;
-}
-
-header li a:hover {
-    color: #cc0000;
+    padding: 15px 0;
 }
 
 .menu-mobile .redes-sociais {
     display: flex;
+    justify-content: center;
+    padding-top: 20px;
 }
 
 .menu-mobile .redes-sociais img {
-    width: 90px;
-}
-
-.menu-mobile .redes-sociais a {
-    padding-left: 25px;
-    padding-top: 80px;
+    width: 70px;
 }
 
 .container-btn {
@@ -287,16 +285,19 @@ header li a:hover {
     width: 100%;
     z-index: 11;
     display: none;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .btn-menu {
-    font-size: 30px;
-    padding: 15px 15px;
-    color: #cc0000 !important;
+    font-size: 16px;
+    padding: 10px 15px;
+    color: #000000;
     background-color: white;
     border: none;
-    float: right;
-    font: bold;
+    font-weight: bold;
     cursor: pointer;
 }
 
@@ -307,19 +308,19 @@ header li a:hover {
 /* Media queries */
 @media (max-width: 767px) {
     .btn-menu {
-        font-size: 20px;
-    }
-
-    .menu-mobile a {
         font-size: 16px;
     }
 
+    .menu-mobile a {
+        font-size: 14px;
+    }
+
     .menu-mobile .redes-sociais img {
-        width: 60px;
+        width: 50px;
     }
 
     .container-btn {
-        display: block;
+        display: flex;
     }
 
     .menu-header {
@@ -327,7 +328,7 @@ header li a:hover {
     }
 
     .container h2 {
-        margin-top: 200px;
+        margin-top: 150px; /* Ajustado para cabeçalho mobile */
         font-size: 40px;
     }
 
@@ -345,22 +346,20 @@ header li a:hover {
     }
 }
 
-/* Estilos para tablets */
 @media (min-width: 768px) and (max-width: 991px) {
     .menu-header {
         display: none;
     }
 
     .container h2 {
-        margin-top: 200px;
+        margin-top: 150px;
     }
 
     .container-btn {
-        display: block;
+        display: flex;
     }
 }
 
-/* Estilos para desktops */
 @media (min-width: 992px) {
     .menu-mobile {
         display: none;
