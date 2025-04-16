@@ -105,7 +105,7 @@ header li a:hover {
 }
 
 .bolhas span {
-    position: relative;
+    position: absolute; /* Mudado para absolute para remover do fluxo normal */
     width: 30px;
     height: 30px;
     background: #ff2d75;
@@ -117,6 +117,7 @@ header li a:hover {
     animation: animar calc(150s / var(--i)) linear infinite;
     opacity: 0.7;
 }
+
 
 @keyframes animar {
     0% {
@@ -138,6 +139,7 @@ header li a:hover {
                 0 0 50px #2dc3ff,
                 0 0 100px #2dc3ff;
 }
+
 
 /* Seção Short Bio */
 .container-biografia {
