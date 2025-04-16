@@ -1,368 +1,368 @@
 /* Configurações Gerais */
- * {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
-     font-family: "San Francisco", sans-serif;
- }
- 
- html {
-     scroll-behavior: smooth;
- }
- 
- /* Header menu */
- .menu-header {
-     background-color: white;
-     position: fixed;
-     width: 100%;
-     z-index: 10;
- }
- 
- .menu-header nav {
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     list-style-type: none;
-     padding: 5px 0;
- }
- 
- .menu-header ul {
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     margin-left: 5%;
-     list-style-type: none;
-     padding: 10px 0;
-     width: 85%;
- }
- 
- header li a {
-     text-decoration: none;
-     padding: 0 30px;
-     font-size: 24px;
-     color: #525557;
-     transition: .3s;
- }
- 
- header li a:hover {
-     color: #ff2d75;
- }
- 
- .redes-sociais {
-     display: flex;
- }
- 
- .redes-sociais img {
-     width: 170px;
- }
- 
- /* Container */
- .container {
-     min-height: 100vh;
-     width: 100%;
-     background-color: #0c192c;
-     position: relative;
-     overflow: hidden;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
- }
- 
- .container h2 {
-     color: white;
-     font-size: 60px;
-     margin-top: 220px;
-     text-align: center;
-     position: relative;
-     z-index: 2;
- }
- 
- .container h4 {
-     color: white;
-     font-size: 30px;
-     margin-top: 60px;
-     text-align: center;
-     position: relative;
-     z-index: 2;
- }
- 
- .btnBio {
-     margin-top: 70px;
-     position: relative;
-     z-index: 2;
- }
- 
- /* Bolhas animadas */
- .bolhas {
-     position: absolute;
-     bottom: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     pointer-events: none;
-     z-index: 1;
-     overflow: hidden;
- }
- 
- .bolhas span {
-     position: absolute;
-     bottom: -100px;
-     width: 30px;
-     height: 30px;
-     background: #ff2d75;
-     border-radius: 50%;
-     box-shadow: 0 0 0 10px #ff2d7544,
-                 0 0 50px #ff2d75,
-                 0 0 100px #ff2d75;
-     animation: animar calc(200s / var(--i)) linear infinite;
-     opacity: 0.75;
- }
- 
- @keyframes animar {
-     0% {
-         transform: translateY(0) scale(0.5);
-         opacity: 0;
-     }
-     10% {
-         opacity: 0.7;
-     }
-     90% {
-         opacity: 0.7;
-     }
-     100% {
-         transform: translateY(-100vh) scale(1);
-         opacity: 0;
-     }
- }
- 
- .bolhas span:nth-of-type(even) {
-     background: #2dc3ff;
-     box-shadow: 0 0 0 10px #2dc3ff44,
-                 0 0 50px #2dc3ff,
-                 0 0 100px #2dc3ff;
- }
- 
- /* Seção Short Bio */
- .container-biografia {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     word-wrap: break-word;
- }
- 
- .container-biografia img {
-     margin-top: 70px;
-     width: 210px;
-     height: 210px;
-     border-radius: 50%;
-     border: 7px solid #fff;
- }
- 
- .container-biografia h2 {
-     color: #212529;
-     font-size: 40px;
-     margin-top: 10px;
- }
- 
- .container-biografia p {
-     width: 80%;
-     margin-top: 20px;
-     margin-bottom: 80px;
-     color: #6c757d;
-     font-size: 20px;
-     text-align: justify;
- }
- 
- /* Container Research */
- .container-pesquisa {
-     background-color: #f8f9fa;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     padding: 80px 0px;
-     word-wrap: break-word;
- }
- 
- .container-pesquisa h2 {
-     color: #212529;
-     font-size: 40px;
-     margin-bottom: 35px;
- }
- 
- .container-pesquisa p {
-     width: 80%;
-     margin-top: 20px;
-     color: #6c757d;
-     font-size: 20px;
-     text-align: justify;
- }
- 
- /* Container Contato */
- .container-contato {
-     background-color: #0c192c;
-     text-align: center;
-     padding: 80px 0px;
-     color: white;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
- }
- 
- .container-contato h2 {
-     font-size: 40px;
-     margin-bottom: 35px;
- }
- 
- .container-contato h4 {
-     font-size: 1.5rem;
-     margin: 0px 0px 18px;
-     width: 80%;
- }
- 
- .container-contato p {
-     font-size: 20px;
-     width: 80%;
- }
- 
- /* Footer */
- footer {
-     text-align: center;
-     margin: 10px 0px;
- }
- 
- .copy {
-     font-size: 90%;
-     line-height: 40px;
-     color: #525557;
- }
- 
- /* Menu mobile */
- .menu-mobile {
-     display: none;
-     background-color: white;
-     position: fixed;
-     width: 100%;
-     z-index: 10;
- }
- 
- .menu-mobile nav {
-     display: flex;
-     flex-direction: column;
- }
- 
- .menu-mobile ul {
-     list-style-type: none;
-     padding-bottom: 40px;
-     width: 100%;
- }
- 
- .menu-mobile li {
-     text-decoration: none;
-     padding: 0 30px;
-     font-size: 24px;
-     color: #525557;
-     padding: 20px 0;
- }
- 
- header li a:hover {
-     color: #ff2d75;
- }
- 
- .menu-mobile .redes-sociais {
-     display: flex;
- }
- 
- .menu-mobile .redes-sociais img {
-     width: 90px;
- }
- 
- .menu-mobile .redes-sociais a {
-     padding-left: 25px;
-     padding-top: 80px;
- }
- 
- .container-btn {
-     background-color: white;
-     position: fixed;
-     width: 100%;
-     z-index: 11;
-     display: none;
- }
- 
- .btn-menu {
-     font-size: 30px;
-     padding: 15px 15px;
-     color: #0c192c;
-     background-color: white;
-     border: none;
-     float: right;
-     font: bold;
-     cursor: pointer;
- }
- 
- .open {
-     display: block;
- }
- 
- /* Media queries */
- @media (max-width: 767px) {
-     .btn-menu {
-         font-size: 20px;
-     }
- 
-     .menu-mobile a {
-         font-size: 16px;
-     }
- 
-     .menu-mobile .redes-sociais img {
-         width: 60px;
-     }
- 
-     .container-btn {
-         display: block;
-     }
- 
-     .menu-header {
-         display: none;
-     }
- 
-     .container h2 {
-         margin-top: 200px;
-         font-size: 40px;
-     }
- 
-     .container h4 {
-         font-size: 16px;
-     }
- 
-     .container-contato h4 {
-         font-size: 20px;
-         margin-bottom: 30px;
-     }
- 
-     .container-contato p {
-         font-size: 16px;
-     }
- }
- 
- /* Estilos para tablets */
- @media (min-width: 768px) and (max-width: 991px) {
-     .menu-header {
-         display: none;
-     }
- 
-     .container h2 {
-         margin-top: 200px;
-     }
- 
-     .container-btn {
-         display: block;
-     }
- }
- 
- /* Estilos para desktops */
- @media (min-width: 992px) {
-     .menu-mobile {
-         display: none;
-     }
- }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "San Francisco", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header menu */
+.menu-header {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.menu-header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+.menu-header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 5%;
+    list-style-type: none;
+    padding: 10px 0;
+    width: 85%;
+}
+
+header li a {
+    text-decoration: none;
+    padding: 0 30px;
+    font-size: 24px;
+    color: #525557;
+    transition: .3s;
+}
+
+header li a:hover {
+    color: #ff2d75;
+}
+
+.redes-sociais {
+    display: flex;
+}
+
+.redes-sociais img {
+    width: 170px;
+}
+
+/* Container */
+.container {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #0c192c;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h2 {
+    color: white;
+    font-size: 60px;
+    margin-top: 220px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.container h4 {
+    color: white;
+    font-size: 30px;
+    margin-top: 60px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.btnBio {
+    margin-top: 70px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Bolhas animadas */
+.bolhas {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.bolhas span {
+    position: absolute;
+    bottom: -100px;
+    width: 30px;
+    height: 30px;
+    background: #ff2d75;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #ff2d7544,
+                0 0 50px #ff2d75,
+                0 0 100px #ff2d75;
+    animation: animar calc(150s / var(--i)) linear infinite;
+    opacity: 0.7;
+}
+
+@keyframes animar {
+    0% {
+        transform: translateY(0) scale(0.5);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.7;
+    }
+    90% {
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(-100vh) scale(1);
+        opacity: 0;
+    }
+}
+
+.bolhas span:nth-of-type(even) {
+    background: #2dc3ff;
+    box-shadow: 0 0 0 10px #2dc3ff44,
+                0 0 50px #2dc3ff,
+                0 0 100px #2dc3ff;
+}
+
+/* Seção Short Bio */
+.container-biografia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    word-wrap: break-word;
+}
+
+.container-biografia img {
+    margin-top: 70px;
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    border: 7px solid #fff;
+}
+
+.container-biografia h2 {
+    color: #212529;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.container-biografia p {
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    color: #6c757d;
+    font-size: 20px;
+    text-align: justify;
+}
+
+/* Container Research */
+.container-pesquisa {
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0px;
+    word-wrap: break-word;
+}
+
+.container-pesquisa h2 {
+    color: #212529;
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+
+.container-pesquisa p {
+    width: 80%;
+    margin-top: 20px;
+    color: #6c757d;
+    font-size: 20px;
+    text-align: justify;
+}
+
+/* Container Contato */
+.container-contato {
+    background-color: #0c192c;
+    text-align: center;
+    padding: 80px 0px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-contato h2 {
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+
+.container-contato h4 {
+    font-size: 1.5rem;
+    margin: 0px 0px 18px;
+    width: 80%;
+}
+
+.container-contato p {
+    font-size: 20px;
+    width: 80%;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.copy {
+    font-size: 90%;
+    line-height: 40px;
+    color: #525557;
+}
+
+/* Menu mobile */
+.menu-mobile {
+    display: none;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.menu-mobile nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-mobile ul {
+    list-style-type: none;
+    padding-bottom: 40px;
+    width: 100%;
+}
+
+.menu-mobile li {
+    text-decoration: none;
+    padding: 0 30px;
+    font-size: 24px;
+    color: #525557;
+    padding: 20px 0;
+}
+
+header li a:hover {
+    color: #ff2d75;
+}
+
+.menu-mobile .redes-sociais {
+    display: flex;
+}
+
+.menu-mobile .redes-sociais img {
+    width: 90px;
+}
+
+.menu-mobile .redes-sociais a {
+    padding-left: 25px;
+    padding-top: 80px;
+}
+
+.container-btn {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 11;
+    display: none;
+}
+
+.btn-menu {
+    font-size: 30px;
+    padding: 15px 15px;
+    color: #0c192c;
+    background-color: white;
+    border: none;
+    float: right;
+    font: bold;
+    cursor: pointer;
+}
+
+.open {
+    display: block;
+}
+
+/* Media queries */
+@media (max-width: 767px) {
+    .btn-menu {
+        font-size: 20px;
+    }
+
+    .menu-mobile a {
+        font-size: 16px;
+    }
+
+    .menu-mobile .redes-sociais img {
+        width: 60px;
+    }
+
+    .container-btn {
+        display: block;
+    }
+
+    .menu-header {
+        display: none;
+    }
+
+    .container h2 {
+        margin-top: 200px;
+        font-size: 40px;
+    }
+
+    .container h4 {
+        font-size: 16px;
+    }
+
+    .container-contato h4 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .container-contato p {
+        font-size: 16px;
+    }
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    .menu-header {
+        display: none;
+    }
+
+    .container h2 {
+        margin-top: 200px;
+    }
+
+    .container-btn {
+        display: block;
+    }
+}
+
+/* Estilos para desktops */
+@media (min-width: 992px) {
+    .menu-mobile {
+        display: none;
+    }
+}
