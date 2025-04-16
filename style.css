@@ -94,7 +94,7 @@ header li a:hover {
 
 /* Bolhas animadas */
 .bolhas {
-    position: relative;
+    position: absolute;
     display: flex;
     flex-wrap: wrap;
     bottom: -100px;
