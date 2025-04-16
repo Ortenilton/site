@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
     bolhasContainer.innerHTML = '';
     
     // Cria bolhas dinâmicas
-    const numBolhas = 50;
+    const numBolhas = 60;
     
     for (let i = 0; i < numBolhas; i++) {
         const bolha = document.createElement('span');
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Propriedades aleatórias
         const randomLeft = Math.random() * 100;
         const randomSize = Math.random() * 20 + 10;
-        const randomDuration = Math.random() * 30 + 20;
+        const randomDuration = Math.random() * 30 + 30;
         const randomDelay = Math.random() * 10;
         const randomBottom = Math.random() * 20;
         
