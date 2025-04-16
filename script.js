@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Propriedades aleatórias
         const randomLeft = Math.random() * 100;
         const randomSize = Math.random() * 20 + 10;
-        const randomDuration = Math.random() * 30 + 30;
+        const randomDuration = Math.random() * 40 + 30;
         const randomDelay = Math.random() * 10;
         const randomBottom = Math.random() * 20;
         
