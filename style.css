@@ -109,11 +109,11 @@ header li a:hover {
     bottom: -100px;
     width: 30px;
     height: 30px;
-    background: #ff0000; /* Alterado de #ff2d75 para vermelho */
+    background: #cc0000; /* Alterado de #ff2d75 para vermelho */
     border-radius: 50%;
-    box-shadow: 0 0 0 10px #ff000044, /* Alterado de #ff2d7544 */
-                0 0 50px #ff0000,    /* Alterado de #ff2d75 */
-                0 0 100px #ff0000;    /* Alterado de #ff2d75 */
+    box-shadow: 0 0 0 10px #cc000044, /* Alterado de #ff2d7544 */
+                0 0 50px #cc0000,    /* Alterado de #ff2d75 */
+                0 0 100px #cc0000;    /* Alterado de #ff2d75 */
     animation: animar calc(300s / var(--i)) linear infinite;
     opacity: 0.75;
 }
@@ -265,7 +265,7 @@ footer {
 }
 
 header li a:hover {
-    color: #ff0000;
+    color: #cc0000;
 }
 
 .menu-mobile .redes-sociais {
