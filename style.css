@@ -93,29 +93,21 @@ header li a:hover {
 }
 
 /* Bolhas animadas */
-.bolhas {
+.bolhas{
     position: absolute;
     display: flex;
-    flex-wrap: wrap;
-    bottom: -100px;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 1;
 }
 
-.bolhas span {
-    position: relative;
+.bolhas span{
     width: 30px;
     height: 30px;
     background: #ff2d75;
     margin: 0 4px;
     border-radius: 50%;
     box-shadow: 0 0 0 10px #ff2d7544,
-                0 0 50px #ff2d75,
-                0 0 100px #ff2d75;
+        0 0 50px #ff2d75,
+        0 0 100px #ff2d75;
     animation: animar calc(150s / var(--i)) linear infinite;
-    opacity: 0.9;
 }
 
 
