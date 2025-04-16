@@ -17,9 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
             animarMenu();
         });
     });
-
-// Isso posiciona as bolhas corretamente
-document.addEventListener('DOMContentLoaded', function() {
+    
     // Configura as bolhas
     const bubbles = document.querySelectorAll('.bolhas span');
     
@@ -28,16 +26,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const randomLeft = Math.floor(Math.random() * 100);
         bubble.style.left = `${randomLeft}%`;
         
-        // Posição inicial fora da tela (abaixo)
-        bubble.style.bottom = `-50px`;
-        
         // Atraso inicial aleatório para criar efeito mais natural
         const randomDelay = Math.random() * 20;
         bubble.style.animationDelay = `${randomDelay}s`;
-        
-        // Tamanho aleatório para mais variedade
-        const randomSize = Math.floor(Math.random() * 20) + 20; // entre 20px e 40px
-        bubble.style.width = `${randomSize}px`;
-        bubble.style.height = `${randomSize}px`;
     });
 });
