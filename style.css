@@ -15,7 +15,7 @@ html {
     background-color: white;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 10;
 }
 
 .menu-header nav {
@@ -61,7 +61,7 @@ header li a:hover {
     min-height: 100vh;
     width: 100%;
     background-color: #0c192c;
-    position: relative; /* ADICIONADO para suportar as bolhas */
+    position: relative;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -73,6 +73,8 @@ header li a:hover {
     font-size: 60px;
     margin-top: 220px;
     text-align: center;
+    position: relative;
+    z-index: 2;
 }
 
 .container h4 {
@@ -80,48 +82,61 @@ header li a:hover {
     font-size: 30px;
     margin-top: 60px;
     text-align: center;
+    position: relative;
+    z-index: 2;
 }
 
 .btnBio {
     margin-top: 70px;
+    position: relative;
+    z-index: 2;
 }
 
 /* Bolhas animadas */
 .bolhas {
     position: absolute;
     display: flex;
-    bottom: 0;
+    flex-wrap: wrap;
+    bottom: -100px;
     width: 100%;
     height: 100%;
     pointer-events: none;
+    z-index: 1;
 }
 
 .bolhas span {
+    position: relative;
     width: 30px;
     height: 30px;
     background: #ff2d75;
     margin: 0 4px;
     border-radius: 50%;
     box-shadow: 0 0 0 10px #ff2d7544,
-    0 0 50px #ff2d75,
-    0 0 100px #ff2d75;
+                0 0 50px #ff2d75,
+                0 0 100px #ff2d75;
     animation: animar calc(150s / var(--i)) linear infinite;
+    opacity: 0.7;
 }
 
 @keyframes animar {
     0% {
         transform: translateY(100vh) scale(0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.7;
     }
     100% {
         transform: translateY(-10vh) scale(1);
+        opacity: 0;
     }
 }
 
 .bolhas span:nth-of-type(even) {
     background: #2dc3ff;
     box-shadow: 0 0 0 10px #2dc3ff44,
-    0 0 50px #2dc3ff,
-    0 0 100px #2dc3ff;
+                0 0 50px #2dc3ff,
+                0 0 100px #2dc3ff;
 }
 
 /* Seção Short Bio */
@@ -224,7 +239,7 @@ footer {
     background-color: white;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 10;
 }
 
 .menu-mobile nav {
@@ -267,7 +282,7 @@ header li a:hover {
     background-color: white;
     position: fixed;
     width: 100%;
-    z-index: 2;
+    z-index: 11;
     display: none;
 }
 
