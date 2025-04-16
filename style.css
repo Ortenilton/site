@@ -96,38 +96,41 @@ header li a:hover {
 .bolhas {
     position: absolute;
     bottom: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     pointer-events: none;
     z-index: 1;
-    /* Removido o display: flex para evitar o posicionamento estático das bolhas */
+    overflow: hidden;
 }
 
 .bolhas span {
-    position: absolute; /* Mudado para absolute para remover do fluxo normal */
+    position: absolute;
+    bottom: -100px;
     width: 30px;
     height: 30px;
     background: #ff2d75;
-    margin: 0 4px;
     border-radius: 50%;
     box-shadow: 0 0 0 10px #ff2d7544,
                 0 0 50px #ff2d75,
                 0 0 100px #ff2d75;
     animation: animar calc(150s / var(--i)) linear infinite;
     opacity: 0.7;
-    /* Sem posicionamento inicial, será definido pelo JavaScript */
 }
 
 @keyframes animar {
     0% {
-        transform: translateY(100vh) scale(0);
+        transform: translateY(0) scale(0.5);
         opacity: 0;
     }
-    50% {
+    10% {
+        opacity: 0.7;
+    }
+    90% {
         opacity: 0.7;
     }
     100% {
-        transform: translateY(-10vh) scale(1);
+        transform: translateY(-100vh) scale(1);
         opacity: 0;
     }
 }
