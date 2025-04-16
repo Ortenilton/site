@@ -60,7 +60,7 @@ header li a:hover {
 .container {
     min-height: 100vh;
     width: 100%;
-    background-color: #0c192c;
+    background-color: #000000;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -109,11 +109,11 @@ header li a:hover {
     bottom: -100px;
     width: 30px;
     height: 30px;
-    background: #ff2d75;
+    background: #ff0000; /* Alterado de #ff2d75 para vermelho */
     border-radius: 50%;
-    box-shadow: 0 0 0 10px #ff2d7544,
-                0 0 50px #ff2d75,
-                0 0 100px #ff2d75;
+    box-shadow: 0 0 0 10px #ff000044, /* Alterado de #ff2d7544 */
+                0 0 50px #ff0000,    /* Alterado de #ff2d75 */
+                0 0 100px #ff0000;    /* Alterado de #ff2d75 */
     animation: animar calc(300s / var(--i)) linear infinite;
     opacity: 0.75;
 }
@@ -136,10 +136,10 @@ header li a:hover {
 }
 
 .bolhas span:nth-of-type(even) {
-    background: #2dc3ff;
-    box-shadow: 0 0 0 10px #2dc3ff44,
-                0 0 50px #2dc3ff,
-                0 0 100px #2dc3ff;
+    background: #ffffff; /* Alterado de #2dc3ff para branco */
+    box-shadow: 0 0 0 10px #ffffff44, /* Alterado de #2dc3ff44 */
+                0 0 50px #ffffff,    /* Alterado de #2dc3ff */
+                0 0 100px #ffffff;    /* Alterado de #2dc3ff */
 }
 
 /* Seção Short Bio */
@@ -199,7 +199,7 @@ header li a:hover {
 
 /* Container Contato */
 .container-contato {
-    background-color: #0c192c;
+    background-color: #000000;
     text-align: center;
     padding: 80px 0px;
     color: white;
@@ -265,7 +265,7 @@ footer {
 }
 
 header li a:hover {
-    color: #ff2d75;
+    color: #ff0000;
 }
 
 .menu-mobile .redes-sociais {
