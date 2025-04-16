@@ -105,7 +105,7 @@ header li a:hover {
 }
 
 .bolhas span {
-    position: absolute; /* Mudado para absolute para remover do fluxo normal */
+    position: relative;
     width: 30px;
     height: 30px;
     background: #ff2d75;
