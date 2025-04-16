@@ -93,23 +93,30 @@ header li a:hover {
 }
 
 /* Bolhas animadas */
-.bolhas{
+.bolhas {
     position: absolute;
     display: flex;
+    flex-wrap: wrap;
+    bottom: -100px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
 }
 
-.bolhas span{
+.bolhas span {
+    position: relative;
     width: 30px;
     height: 30px;
     background: #ff2d75;
     margin: 0 4px;
     border-radius: 50%;
     box-shadow: 0 0 0 10px #ff2d7544,
-        0 0 50px #ff2d75,
-        0 0 100px #ff2d75;
+                0 0 50px #ff2d75,
+                0 0 100px #ff2d75;
     animation: animar calc(150s / var(--i)) linear infinite;
+    opacity: 0.7;
 }
-
 
 @keyframes animar {
     0% {
@@ -131,7 +138,6 @@ header li a:hover {
                 0 0 50px #2dc3ff,
                 0 0 100px #2dc3ff;
 }
-
 
 /* Seção Short Bio */
 .container-biografia {
