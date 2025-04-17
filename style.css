@@ -109,11 +109,11 @@ header li a:hover {
     bottom: -100px;
     width: 30px;
     height: 30px;
-    background: #cc0000; /* Alterado de #ff2d75 para vermelho */
+    background: #cc0000;
     border-radius: 50%;
-    box-shadow: 0 0 0 10px #cc000044, /* Alterado de #ff2d7544 */
-                0 0 50px #cc0000,    /* Alterado de #ff2d75 */
-                0 0 100px #cc0000;    /* Alterado de #ff2d75 */
+    box-shadow: 0 0 0 10px #cc000044,
+                0 0 50px #cc0000,
+                0 0 100px #cc0000;
     animation: animar calc(300s / var(--i)) linear infinite;
     opacity: 0.75;
 }
@@ -136,10 +136,10 @@ header li a:hover {
 }
 
 .bolhas span:nth-of-type(even) {
-    background: #ffffff; /* Alterado de #2dc3ff para branco */
-    box-shadow: 0 0 0 10px #ffffff44, /* Alterado de #2dc3ff44 */
-                0 0 50px #ffffff,    /* Alterado de #2dc3ff */
-                0 0 100px #ffffff;    /* Alterado de #2dc3ff */
+    background: #ffffff;
+    box-shadow: 0 0 0 10px #ffffff44,
+                0 0 50px #ffffff,
+                0 0 100px #ffffff;
 }
 
 /* Seção Short Bio */
@@ -197,7 +197,7 @@ header li a:hover {
     text-align: justify;
 }
 
-/* Container Publicações */
+/* Container Publicações - MODIFICADO */
 .container-publicacoes {
     background-color: #ffffff;
     display: flex;
@@ -215,33 +215,53 @@ header li a:hover {
 
 .categoria-publicacao {
     width: 80%;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
+    counter-reset: pub-counter;
 }
 
 .categoria-publicacao h3 {
-    color: #cc0000;
+    color: #212529;
     font-size: 26px;
     margin-bottom: 20px;
-    border-bottom: 2px solid #cc0000;
+    border-bottom: 2px solid #212529;
     padding-bottom: 8px;
+}
+
+.categoria-publicacao h3::before {
+    counter-increment: pub-counter;
+    content: counter(pub-counter) ". ";
+    color: #cc0000;
 }
 
 .lista-publicacoes {
     list-style-type: none;
     padding: 0;
+    counter-reset: item-counter;
 }
 
 .lista-publicacoes li {
-    margin-bottom: 25px;
-    padding-left: 20px;
+    margin-bottom: 15px;
+    padding-left: 40px;
     border-left: 3px solid #ddd;
-    color: #cc0000;
+    color: #212529;
     font-size: 20px;
     text-align: justify;
+    line-height: 1.5;
+    position: relative;
+}
+
+.lista-publicacoes li::before {
+    counter-increment: item-counter;
+    content: counter(pub-counter) "." counter(item-counter) " ";
+    position: absolute;
+    left: 0;
+    color: #cc0000;
+    font-weight: bold;
 }
 
 .lista-publicacoes li strong {
     color: #212529;
+    font-weight: 600;
 }
 
 .lista-publicacoes li a {
@@ -401,7 +421,7 @@ header li a:hover {
         font-size: 16px;
     }
     
-    /* Responsividade para publicações em mobile */
+    /* Ajustes para publicações em mobile */
     .container-publicacoes h2 {
         font-size: 30px;
     }
@@ -412,10 +432,11 @@ header li a:hover {
     
     .lista-publicacoes li {
         font-size: 16px;
+        padding-left: 30px;
     }
     
-    .lista-publicacoes li strong {
-        font-size: 18px;
+    .lista-publicacoes li::before {
+        font-size: 14px;
     }
 }
 
