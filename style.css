@@ -6,43 +6,11 @@
     font-family: "San Francisco", sans-serif;
 }
 
-/* LINKS GLOBAIS */
-a {
-    color: #cc0000 !important;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* EXCEÇÕES */
-/* 1. Menu principal (cinza normal) */
-.menu-header li a,
-.menu-mobile li a {
-    color: #525557 !important;
-}
-
-/* 2. Hover do menu (vermelho) */
-.menu-header li a:hover,
-.menu-mobile li a:hover {
-    color: #cc0000 !important;
-}
-
-/* 3. Link "here" na bio (sublinhado permanente) */
-.container-biografia p a {
-    text-decoration: underline !important;
-}
-
-/* ========================================== */
-/* ========== (O RESTO DO SEU CSS ORIGINAL) ========== */
-/* ========================================== */
-
 html {
     scroll-behavior: smooth;
 }
 
+/* Header menu - FONTES REDUZIDAS EM 10% */
 .menu-header {
     background-color: white;
     position: fixed;
@@ -69,8 +37,15 @@ html {
 }
 
 header li a {
+    text-decoration: none;
     padding: 0 30px;
-    font-size: 24px;
+    font-size: 21.6px; /* Reduzido de 24px para 21.6px (10% menor) */
+    color: #525557;
+    transition: .3s;
+}
+
+header li a:hover {
+    color: #ff2d75;
 }
 
 .redes-sociais {
@@ -81,6 +56,7 @@ header li a {
     width: 170px;
 }
 
+/* Container */
 .container {
     min-height: 100vh;
     width: 100%;
@@ -116,6 +92,7 @@ header li a {
     z-index: 2;
 }
 
+/* Bolhas animadas */
 .bolhas {
     position: absolute;
     bottom: 0;
@@ -165,6 +142,7 @@ header li a {
                 0 0 100px #ffffff;
 }
 
+/* Seção Short Bio */
 .container-biografia {
     display: flex;
     flex-direction: column;
@@ -195,6 +173,7 @@ header li a {
     text-align: justify;
 }
 
+/* Container Research */
 .container-pesquisa {
     background-color: #ffffff;
     display: flex;
@@ -218,6 +197,7 @@ header li a {
     text-align: justify;
 }
 
+/* Container Publicações */
 .container-publicacoes {
     background-color: #f8f9fa;
     display: flex;
@@ -276,6 +256,17 @@ header li a {
     font-weight: 600;
 }
 
+.lista-publicacoes li a {
+    color: #cc0000;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.lista-publicacoes li a:hover {
+    text-decoration: underline;
+}
+
+/* Container Contato */
 .container-contato {
     background-color: #111111;
     text-align: center;
@@ -302,6 +293,7 @@ header li a {
     width: 80%;
 }
 
+/* Footer */
 footer {
     text-align: center;
     margin: 10px 0px;
@@ -313,6 +305,7 @@ footer {
     color: #525557;
 }
 
+/* Menu mobile - FONTE REDUZIDA EM 10% */
 .menu-mobile {
     display: none;
     background-color: white;
@@ -335,8 +328,13 @@ footer {
 .menu-mobile li {
     text-decoration: none;
     padding: 0 30px;
-    font-size: 24px;
+    font-size: 21.6px; /* Reduzido proporcionalmente */
+    color: #525557;
     padding: 20px 0;
+}
+
+header li a:hover {
+    color: #cc0000;
 }
 
 .menu-mobile .redes-sociais {
@@ -363,6 +361,7 @@ footer {
 .btn-menu {
     font-size: 30px;
     padding: 15px 15px;
+    color: #cc0000 !important;
     background-color: white;
     border: none;
     float: right;
@@ -374,13 +373,14 @@ footer {
     display: block;
 }
 
+/* Media queries */
 @media (max-width: 767px) {
     .btn-menu {
         font-size: 20px;
     }
 
     .menu-mobile a {
-        font-size: 16px;
+        font-size: 14.4px; /* Reduzido de 16px para 14.4px (10% menor) */
     }
 
     .menu-mobile .redes-sociais img {
@@ -413,6 +413,7 @@ footer {
         font-size: 16px;
     }
     
+    /* Ajustes para publicações em mobile */
     .container-publicacoes h2 {
         font-size: 30px;
     }
@@ -425,8 +426,13 @@ footer {
         font-size: 16px;
         padding-left: 30px;
     }
+    
+    .lista-publicacoes li::before {
+        font-size: 14px;
+    }
 }
 
+/* Estilos para tablets */
 @media (min-width: 768px) and (max-width: 991px) {
     .menu-header {
         display: none;
@@ -441,6 +447,7 @@ footer {
     }
 }
 
+/* Estilos para desktops */
 @media (min-width: 992px) {
     .menu-mobile {
         display: none;
