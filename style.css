@@ -6,7 +6,7 @@
     font-family: "San Francisco", sans-serif;
 }
 
-/* LINKS GLOBAIS (exceto menu) */
+/* LINKS GLOBAIS (exceto menu e o link "here" na bio) */
 a:not(.menu-header a):not(.menu-mobile a) {
     color: #cc0000 !important;
     text-decoration: none;
@@ -21,7 +21,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Header menu (LINKS PERMANECEM CINZA) */
+/* Header menu (links permanecem cinza) */
 .menu-header {
     background-color: white;
     position: fixed;
@@ -48,7 +48,7 @@ html {
 }
 
 header li a {
-    color: #525557 !important; /* Mantido cinza */
+    color: #525557 !important;
     text-decoration: none;
     padding: 0 30px;
     font-size: 24px;
@@ -56,7 +56,7 @@ header li a {
 }
 
 header li a:hover {
-    color: #ff2d75 !important; /* Hover original */
+    color: #ff2d75 !important;
 }
 
 .redes-sociais {
@@ -153,7 +153,7 @@ header li a:hover {
                 0 0 100px #ffffff;
 }
 
-/* Seção Short Bio */
+/* Seção Short Bio - ESTILO ESPECÍFICO PARA "here" */
 .container-biografia {
     display: flex;
     flex-direction: column;
@@ -184,8 +184,9 @@ header li a:hover {
     text-align: justify;
 }
 
-.container-biografia a {
-    text-decoration: underline;
+.container-biografia p a {
+    text-decoration: underline !important; /* Sublinhado permanente */
+    color: #cc0000 !important;
 }
 
 /* Container Research */
@@ -322,7 +323,7 @@ footer {
     color: #cc0000 !important;
 }
 
-/* Menu mobile (LINKS PERMANECEM CINZA) */
+/* Menu mobile (links permanecem cinza) */
 .menu-mobile {
     display: none;
     background-color: white;
@@ -343,7 +344,7 @@ footer {
 }
 
 .menu-mobile li {
-    color: #525557 !important; /* Mantido cinza */
+    color: #525557 !important;
     text-decoration: none;
     padding: 0 30px;
     font-size: 24px;
@@ -351,7 +352,7 @@ footer {
 }
 
 .menu-mobile a:hover {
-    color: #ff2d75 !important; /* Hover original */
+    color: #ff2d75 !important;
 }
 
 .menu-mobile .redes-sociais {
