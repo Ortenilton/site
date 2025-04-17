@@ -265,7 +265,7 @@ header li a:hover {
 }
 
 .lista-publicacoes li a {
-    color: #212529;
+    color: #cc0000;
     text-decoration: none;
     transition: .3s;
 }
