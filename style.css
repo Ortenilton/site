@@ -6,22 +6,36 @@
     font-family: "San Francisco", sans-serif;
 }
 
-/* LINKS GLOBAIS (exceto menu e o link "here" na bio) */
-a:not(.menu-header a):not(.menu-mobile a) {
+/* LINKS GLOBAIS */
+a {
     color: #cc0000 !important;
     text-decoration: none;
     transition: 0.3s;
 }
 
 a:hover {
+    color: #cc0000 !important;
     text-decoration: underline;
+    opacity: 0.8;
+}
+
+/* EXCEÇÕES ESPECÍFICAS */
+/* 1. Menu principal (cinza normal, vermelho no hover) */
+.menu-header li a,
+.menu-mobile li a {
+    color: #525557 !important;
+}
+
+/* 2. Link "here" na bio (sublinhado permanente) */
+.container-biografia p a {
+    text-decoration: underline !important;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-/* Header menu (links permanecem cinza) */
+/* Header menu */
 .menu-header {
     background-color: white;
     position: fixed;
@@ -48,15 +62,8 @@ html {
 }
 
 header li a {
-    color: #525557 !important;
-    text-decoration: none;
     padding: 0 30px;
     font-size: 24px;
-    transition: .3s;
-}
-
-header li a:hover {
-    color: #ff2d75 !important;
 }
 
 .redes-sociais {
@@ -153,7 +160,7 @@ header li a:hover {
                 0 0 100px #ffffff;
 }
 
-/* Seção Short Bio - ESTILO ESPECÍFICO PARA "here" */
+/* Seção Short Bio */
 .container-biografia {
     display: flex;
     flex-direction: column;
@@ -182,11 +189,6 @@ header li a:hover {
     color: #6c757d;
     font-size: 20px;
     text-align: justify;
-}
-
-.container-biografia p a {
-    text-decoration: underline !important; /* Sublinhado permanente */
-    color: #cc0000 !important;
 }
 
 /* Container Research */
@@ -272,10 +274,6 @@ header li a:hover {
     font-weight: 600;
 }
 
-.lista-publicacoes li a:hover {
-    text-decoration: underline;
-}
-
 /* Container Contato */
 .container-contato {
     background-color: #111111;
@@ -303,10 +301,6 @@ header li a:hover {
     width: 80%;
 }
 
-.container-contato a {
-    text-decoration: underline;
-}
-
 /* Footer */
 footer {
     text-align: center;
@@ -319,11 +313,7 @@ footer {
     color: #525557;
 }
 
-.copy a {
-    color: #cc0000 !important;
-}
-
-/* Menu mobile (links permanecem cinza) */
+/* Menu mobile */
 .menu-mobile {
     display: none;
     background-color: white;
@@ -344,15 +334,10 @@ footer {
 }
 
 .menu-mobile li {
-    color: #525557 !important;
     text-decoration: none;
     padding: 0 30px;
     font-size: 24px;
     padding: 20px 0;
-}
-
-.menu-mobile a:hover {
-    color: #ff2d75 !important;
 }
 
 .menu-mobile .redes-sociais {
