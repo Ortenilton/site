@@ -6,11 +6,22 @@
     font-family: "San Francisco", sans-serif;
 }
 
+/* LINKS GLOBAIS (exceto menu) */
+a:not(.menu-header a):not(.menu-mobile a) {
+    color: #cc0000 !important;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
-/* Header menu */
+/* Header menu (LINKS PERMANECEM CINZA) */
 .menu-header {
     background-color: white;
     position: fixed;
@@ -37,15 +48,15 @@ html {
 }
 
 header li a {
+    color: #525557 !important; /* Mantido cinza */
     text-decoration: none;
     padding: 0 30px;
     font-size: 24px;
-    color: #525557;
     transition: .3s;
 }
 
 header li a:hover {
-    color: #ff2d75;
+    color: #ff2d75 !important; /* Hover original */
 }
 
 .redes-sociais {
@@ -173,6 +184,10 @@ header li a:hover {
     text-align: justify;
 }
 
+.container-biografia a {
+    text-decoration: underline;
+}
+
 /* Container Research */
 .container-pesquisa {
     background-color: #ffffff;
@@ -256,12 +271,6 @@ header li a:hover {
     font-weight: 600;
 }
 
-.lista-publicacoes li a {
-    color: #cc0000;
-    text-decoration: none;
-    transition: .3s;
-}
-
 .lista-publicacoes li a:hover {
     text-decoration: underline;
 }
@@ -293,6 +302,10 @@ header li a:hover {
     width: 80%;
 }
 
+.container-contato a {
+    text-decoration: underline;
+}
+
 /* Footer */
 footer {
     text-align: center;
@@ -305,7 +318,11 @@ footer {
     color: #525557;
 }
 
-/* Menu mobile */
+.copy a {
+    color: #cc0000 !important;
+}
+
+/* Menu mobile (LINKS PERMANECEM CINZA) */
 .menu-mobile {
     display: none;
     background-color: white;
@@ -326,15 +343,15 @@ footer {
 }
 
 .menu-mobile li {
+    color: #525557 !important; /* Mantido cinza */
     text-decoration: none;
     padding: 0 30px;
     font-size: 24px;
-    color: #525557;
     padding: 20px 0;
 }
 
-header li a:hover {
-    color: #cc0000;
+.menu-mobile a:hover {
+    color: #ff2d75 !important; /* Hover original */
 }
 
 .menu-mobile .redes-sociais {
@@ -361,7 +378,6 @@ header li a:hover {
 .btn-menu {
     font-size: 30px;
     padding: 15px 15px;
-    color: #cc0000 !important;
     background-color: white;
     border: none;
     float: right;
@@ -413,7 +429,6 @@ header li a:hover {
         font-size: 16px;
     }
     
-    /* Ajustes para publicações em mobile */
     .container-publicacoes h2 {
         font-size: 30px;
     }
@@ -426,13 +441,8 @@ header li a:hover {
         font-size: 16px;
         padding-left: 30px;
     }
-    
-    .lista-publicacoes li::before {
-        font-size: 14px;
-    }
 }
 
-/* Estilos para tablets */
 @media (min-width: 768px) and (max-width: 991px) {
     .menu-header {
         display: none;
@@ -447,7 +457,6 @@ header li a:hover {
     }
 }
 
-/* Estilos para desktops */
 @media (min-width: 992px) {
     .menu-mobile {
         display: none;
