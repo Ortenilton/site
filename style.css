@@ -208,7 +208,7 @@ header li a:hover {
 }
 
 .container-publicacoes h2 {
-    color: #ff0000;
+    color: #212529;
     font-size: 40px;
     margin-bottom: 35px;
 }
@@ -265,7 +265,7 @@ header li a:hover {
 }
 
 .lista-publicacoes li a {
-    color: #ff0000;
+    color: #212529;
     text-decoration: none;
     transition: .3s;
 }
