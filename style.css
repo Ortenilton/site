@@ -14,28 +14,35 @@ a {
 }
 
 a:hover {
-    color: #cc0000 !important;
     text-decoration: underline;
-    opacity: 0.8;
 }
 
-/* EXCEÇÕES ESPECÍFICAS */
-/* 1. Menu principal (cinza normal, vermelho no hover) */
+/* EXCEÇÕES */
+/* 1. Menu principal (cinza normal) */
 .menu-header li a,
 .menu-mobile li a {
     color: #525557 !important;
 }
 
-/* 2. Link "here" na bio (sublinhado permanente) */
+/* 2. Hover do menu (vermelho) */
+.menu-header li a:hover,
+.menu-mobile li a:hover {
+    color: #cc0000 !important;
+}
+
+/* 3. Link "here" na bio (sublinhado permanente) */
 .container-biografia p a {
     text-decoration: underline !important;
 }
+
+/* ========================================== */
+/* ========== (O RESTO DO SEU CSS ORIGINAL) ========== */
+/* ========================================== */
 
 html {
     scroll-behavior: smooth;
 }
 
-/* Header menu */
 .menu-header {
     background-color: white;
     position: fixed;
@@ -74,7 +81,6 @@ header li a {
     width: 170px;
 }
 
-/* Container */
 .container {
     min-height: 100vh;
     width: 100%;
@@ -110,7 +116,6 @@ header li a {
     z-index: 2;
 }
 
-/* Bolhas animadas */
 .bolhas {
     position: absolute;
     bottom: 0;
@@ -160,7 +165,6 @@ header li a {
                 0 0 100px #ffffff;
 }
 
-/* Seção Short Bio */
 .container-biografia {
     display: flex;
     flex-direction: column;
@@ -191,7 +195,6 @@ header li a {
     text-align: justify;
 }
 
-/* Container Research */
 .container-pesquisa {
     background-color: #ffffff;
     display: flex;
@@ -215,7 +218,6 @@ header li a {
     text-align: justify;
 }
 
-/* Container Publicações */
 .container-publicacoes {
     background-color: #f8f9fa;
     display: flex;
@@ -274,7 +276,6 @@ header li a {
     font-weight: 600;
 }
 
-/* Container Contato */
 .container-contato {
     background-color: #111111;
     text-align: center;
@@ -301,7 +302,6 @@ header li a {
     width: 80%;
 }
 
-/* Footer */
 footer {
     text-align: center;
     margin: 10px 0px;
@@ -313,7 +313,6 @@ footer {
     color: #525557;
 }
 
-/* Menu mobile */
 .menu-mobile {
     display: none;
     background-color: white;
@@ -375,7 +374,6 @@ footer {
     display: block;
 }
 
-/* Media queries */
 @media (max-width: 767px) {
     .btn-menu {
         font-size: 20px;
