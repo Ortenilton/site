@@ -197,7 +197,7 @@ header li a:hover {
     text-align: justify;
 }
 
-/* Container Publicações - MODIFICADO */
+/* Container Publicações - VERSÃO FINAL */
 .container-publicacoes {
     background-color: #f8f9fa;
     display: flex;
@@ -216,7 +216,6 @@ header li a:hover {
 .categoria-publicacao {
     width: 80%;
     margin-bottom: 40px;
-    counter-reset: pub-counter;
 }
 
 .categoria-publicacao h3 {
@@ -225,12 +224,6 @@ header li a:hover {
     margin-bottom: 20px;
     border-bottom: 2px solid #212529;
     padding-bottom: 8px;
-}
-
-.categoria-publicacao h3::before {
-    counter-increment: pub-counter;
-    content: counter(pub-counter) ". ";
-    color: #cc0000;
 }
 
 .lista-publicacoes {
@@ -242,7 +235,6 @@ header li a:hover {
 .lista-publicacoes li {
     margin-bottom: 15px;
     padding-left: 40px;
-    border-left: 3px solid #ddd;
     color: #212529;
     font-size: 20px;
     text-align: justify;
@@ -252,7 +244,7 @@ header li a:hover {
 
 .lista-publicacoes li::before {
     counter-increment: item-counter;
-    content: counter(pub-counter) "." counter(item-counter) " ";
+    content: counter(item-counter) ". ";
     position: absolute;
     left: 0;
     color: #cc0000;
