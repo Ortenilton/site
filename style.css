@@ -219,7 +219,7 @@ header li a:hover {
 }
 
 .categoria-publicacao h3 {
-    color: #212529;
+    color: #cc0000;
     font-size: 26px;
     margin-bottom: 20px;
     border-bottom: 2px solid #cc0000;
@@ -235,7 +235,7 @@ header li a:hover {
     margin-bottom: 25px;
     padding-left: 20px;
     border-left: 3px solid #ddd;
-    color: #6c757d;
+    color: #cc0000;
     font-size: 20px;
     text-align: justify;
 }
