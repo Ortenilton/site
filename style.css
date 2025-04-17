@@ -175,7 +175,7 @@ header li a:hover {
 
 /* Container Research */
 .container-pesquisa {
-    background-color: #f8f9fa;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -199,7 +199,7 @@ header li a:hover {
 
 /* Container Publicações - MODIFICADO */
 .container-publicacoes {
-    background-color: #ffffff;
+    background-color: #f8f9fa;
     display: flex;
     flex-direction: column;
     align-items: center;
