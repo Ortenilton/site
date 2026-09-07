@@ -192,7 +192,7 @@ header li a {
 }
 
 .container-biografia p {
-    width: 64%;
+    width: 60%;
     margin-top: 20px;
     margin-bottom: 80px;
     color: #6c757d;
@@ -216,7 +216,7 @@ header li a {
 }
 
 .container-pesquisa p {
-    width: 64%;
+    width: 60%;
     margin-top: 20px;
     color: #6c757d;
     font-size: 20px;
@@ -236,12 +236,12 @@ header li a {
     color: #212529;
     font-size: 40px;
     margin-bottom: 35px;
-    width: 64%;
+    width: 60%;
     text-align: center;
 }
 
 .categoria-publicacao {
-    width: 64%;
+    width: 60%;
     margin-bottom: 40px;
 }
 
