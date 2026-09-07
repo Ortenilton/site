@@ -188,7 +188,7 @@ header li a {
     margin-top: 10px;
 }
 
-/* ALTERADO: Margens menores */
+/* ALTERADO: Apenas margem */
 .container-biografia p {
     max-width: 1000px;
     padding: 0 20px;
@@ -199,7 +199,6 @@ header li a {
     text-align: justify;
 }
 
-/* ALTERADO: Margens menores */
 .container-pesquisa {
     background-color: #ffffff;
     display: flex;
@@ -215,6 +214,7 @@ header li a {
     margin-bottom: 35px;
 }
 
+/* ALTERADO: Apenas margem */
 .container-pesquisa p {
     max-width: 1000px;
     padding: 0 20px;
@@ -239,7 +239,7 @@ header li a {
     margin-bottom: 35px;
 }
 
-/* ALTERADO: Margens menores */
+/* ALTERADO: Apenas margem */
 .categoria-publicacao {
     max-width: 1000px;
     padding: 0 20px;
@@ -252,17 +252,14 @@ header li a {
     margin-bottom: 20px;
     border-bottom: 2px solid #cc0000;
     padding-bottom: 8px;
-    text-align: left;
 }
 
 .lista-publicacoes {
     list-style-type: none;
     padding: 0;
     counter-reset: item-counter;
-    text-align: left;
 }
 
-/* ALTERADO: Alinhamento justificado como a bio e research */
 .lista-publicacoes li {
     margin-bottom: 15px;
     padding-left: 40px;
@@ -306,7 +303,7 @@ header li a {
     margin-bottom: 35px;
 }
 
-/* ALTERADO: Margens menores */
+/* ALTERADO: Apenas margem */
 .container-contato h4 {
     max-width: 1000px;
     padding: 0 20px;
@@ -314,7 +311,7 @@ header li a {
     font-size: 1.5rem;
 }
 
-/* ALTERADO: Margens menores */
+/* ALTERADO: Apenas margem */
 .container-contato p {
     max-width: 1000px;
     padding: 0 20px;
