@@ -188,10 +188,10 @@ header li a {
     margin-top: 10px;
 }
 
-/* ALTERADO: Controle fino de margens */
+/* ALTERADO: Margens menores */
 .container-biografia p {
-    max-width: 900px;
-    padding: 0 40px;
+    max-width: 1000px;
+    padding: 0 20px;
     margin: 20px auto;
     margin-bottom: 80px;
     color: #6c757d;
@@ -199,7 +199,7 @@ header li a {
     text-align: justify;
 }
 
-/* ALTERADO: Controle fino de margens */
+/* ALTERADO: Margens menores */
 .container-pesquisa {
     background-color: #ffffff;
     display: flex;
@@ -216,8 +216,8 @@ header li a {
 }
 
 .container-pesquisa p {
-    max-width: 900px;
-    padding: 0 40px;
+    max-width: 1000px;
+    padding: 0 20px;
     margin: 20px auto;
     color: #6c757d;
     font-size: 20px;
@@ -239,10 +239,10 @@ header li a {
     margin-bottom: 35px;
 }
 
-/* ALTERADO: Controle fino de margens */
+/* ALTERADO: Margens menores e alinhamento à esquerda */
 .categoria-publicacao {
-    max-width: 900px;
-    padding: 0 40px;
+    max-width: 1000px;
+    padding: 0 20px;
     margin: 0 auto 40px auto;
 }
 
@@ -252,12 +252,14 @@ header li a {
     margin-bottom: 20px;
     border-bottom: 2px solid #cc0000;
     padding-bottom: 8px;
+    text-align: left;
 }
 
 .lista-publicacoes {
     list-style-type: none;
     padding: 0;
     counter-reset: item-counter;
+    text-align: left;
 }
 
 .lista-publicacoes li {
@@ -265,7 +267,7 @@ header li a {
     padding-left: 40px;
     color: #212529;
     font-size: 20px;
-    text-align: justify;
+    text-align: left;
     line-height: 1.5;
     position: relative;
 }
@@ -303,18 +305,18 @@ header li a {
     margin-bottom: 35px;
 }
 
-/* ALTERADO: Controle fino de margens */
+/* ALTERADO: Margens menores */
 .container-contato h4 {
-    max-width: 900px;
-    padding: 0 40px;
+    max-width: 1000px;
+    padding: 0 20px;
     margin: 0 auto 18px auto;
     font-size: 1.5rem;
 }
 
-/* ALTERADO: Controle fino de margens */
+/* ALTERADO: Margens menores */
 .container-contato p {
-    max-width: 900px;
-    padding: 0 40px;
+    max-width: 1000px;
+    padding: 0 20px;
     margin: 0 auto;
     font-size: 20px;
 }
