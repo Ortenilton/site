@@ -239,7 +239,7 @@ header li a {
     margin-bottom: 35px;
 }
 
-/* ALTERADO: Margens menores e alinhamento à esquerda */
+/* ALTERADO: Margens menores */
 .categoria-publicacao {
     max-width: 1000px;
     padding: 0 20px;
@@ -262,12 +262,13 @@ header li a {
     text-align: left;
 }
 
+/* ALTERADO: Alinhamento justificado como a bio e research */
 .lista-publicacoes li {
     margin-bottom: 15px;
     padding-left: 40px;
     color: #212529;
     font-size: 20px;
-    text-align: left;
+    text-align: justify;
     line-height: 1.5;
     position: relative;
 }
