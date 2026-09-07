@@ -22,7 +22,7 @@ a:hover {
 .menu-header li a,
 .menu-mobile li a {
     color: #525557 !important;
-    font-size: 21.6px; /* Reduzido em 10% (de 24px) */
+    font-size: 21.6px;
 }
 
 /* 2. Link "here" na bio */
@@ -148,12 +148,15 @@ header li a {
         transform: translateY(0) scale(0.5);
         opacity: 0;
     }
+
     10% {
         opacity: 0.7;
     }
+
     90% {
         opacity: 0.7;
     }
+
     100% {
         transform: translateY(-100vh) scale(1);
         opacity: 0;
@@ -189,7 +192,7 @@ header li a {
 }
 
 .container-biografia p {
-    width: 80%;
+    width: 78%;
     margin-top: 20px;
     margin-bottom: 80px;
     color: #6c757d;
@@ -213,7 +216,7 @@ header li a {
 }
 
 .container-pesquisa p {
-    width: 80%;
+    width: 78%;
     margin-top: 20px;
     color: #6c757d;
     font-size: 20px;
@@ -233,10 +236,12 @@ header li a {
     color: #212529;
     font-size: 40px;
     margin-bottom: 35px;
+    width: 78%;
+    text-align: left;
 }
 
 .categoria-publicacao {
-    width: 80%;
+    width: 78%;
     margin-bottom: 40px;
 }
 
@@ -300,12 +305,12 @@ header li a {
 .container-contato h4 {
     font-size: 1.5rem;
     margin: 0px 0px 18px;
-    width: 80%;
+    width: 78%;
 }
 
 .container-contato p {
     font-size: 20px;
-    width: 80%;
+    width: 78%;
 }
 
 footer {
@@ -341,7 +346,7 @@ footer {
 .menu-mobile li {
     text-decoration: none;
     padding: 0 30px;
-    font-size: 21.6px; /* Reduzido proporcionalmente */
+    font-size: 21.6px;
     color: #525557;
     padding: 20px 0;
 }
@@ -382,14 +387,18 @@ footer {
     display: block;
 }
 
-/* Media queries */
+/* ========================================== */
+/* ============== MEDIA QUERIES ============= */
+/* ========================================== */
+
 @media (max-width: 767px) {
+
     .btn-menu {
         font-size: 20px;
     }
 
     .menu-mobile a {
-        font-size: 14.4px; /* Reduzido de 16px para 14.4px (10% menor) */
+        font-size: 14.4px;
     }
 
     .menu-mobile .redes-sociais img {
@@ -412,7 +421,7 @@ footer {
     .container h4 {
         font-size: 16px;
     }
-    
+
     .container-contato h4 {
         font-size: 20px;
         margin-bottom: 30px;
@@ -421,26 +430,27 @@ footer {
     .container-contato p {
         font-size: 16px;
     }
-    
+
     .container-publicacoes h2 {
         font-size: 30px;
     }
-    
+
     .categoria-publicacao h3 {
         font-size: 22px;
     }
-    
+
     .lista-publicacoes li {
         font-size: 16px;
         padding-left: 30px;
     }
-    
+
     .lista-publicacoes li::before {
         font-size: 14px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
     .menu-header {
         display: none;
     }
@@ -455,6 +465,7 @@ footer {
 }
 
 @media (min-width: 992px) {
+
     .menu-mobile {
         display: none;
     }
