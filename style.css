@@ -188,15 +188,18 @@ header li a {
     margin-top: 10px;
 }
 
+/* ALTERADO: Controle fino de margens */
 .container-biografia p {
-    width: 80%;
-    margin-top: 20px;
+    max-width: 900px;
+    padding: 0 40px;
+    margin: 20px auto;
     margin-bottom: 80px;
     color: #6c757d;
     font-size: 20px;
     text-align: justify;
 }
 
+/* ALTERADO: Controle fino de margens */
 .container-pesquisa {
     background-color: #ffffff;
     display: flex;
@@ -213,8 +216,9 @@ header li a {
 }
 
 .container-pesquisa p {
-    width: 80%;
-    margin-top: 20px;
+    max-width: 900px;
+    padding: 0 40px;
+    margin: 20px auto;
     color: #6c757d;
     font-size: 20px;
     text-align: justify;
@@ -235,9 +239,11 @@ header li a {
     margin-bottom: 35px;
 }
 
+/* ALTERADO: Controle fino de margens */
 .categoria-publicacao {
-    width: 80%;
-    margin-bottom: 40px;
+    max-width: 900px;
+    padding: 0 40px;
+    margin: 0 auto 40px auto;
 }
 
 .categoria-publicacao h3 {
@@ -297,15 +303,20 @@ header li a {
     margin-bottom: 35px;
 }
 
+/* ALTERADO: Controle fino de margens */
 .container-contato h4 {
+    max-width: 900px;
+    padding: 0 40px;
+    margin: 0 auto 18px auto;
     font-size: 1.5rem;
-    margin: 0px 0px 18px;
-    width: 80%;
 }
 
+/* ALTERADO: Controle fino de margens */
 .container-contato p {
+    max-width: 900px;
+    padding: 0 40px;
+    margin: 0 auto;
     font-size: 20px;
-    width: 80%;
 }
 
 footer {
