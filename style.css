@@ -242,19 +242,7 @@ a:hover {
     margin-top: 20px;
 }
 
-.hero-topics {
-    font-size: clamp(14px, 1.7vw, 16px);
-    color: rgba(255, 255, 255, .6);
-    margin-top: 10px;
-}
 
-.hero-actions {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-    margin-top: 36px;
-}
 
 
 
@@ -362,16 +350,7 @@ a:hover {
     color: #fff;
 }
 
-.btn-ghost {
-    color: #fff;
-    border: 1px solid rgba(255, 255, 255, .3);
-    background: rgba(255, 255, 255, .05);
-}
 
-.btn-ghost:hover {
-    color: #fff;
-    border-color: #fff;
-}
 
 .btn-small {
     padding: 11px 20px;
@@ -390,14 +369,6 @@ a:hover {
     background: var(--bg-alt);
 }
 
-.section-label {
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: .14em;
-    text-transform: uppercase;
-    color: var(--red);
-    margin-bottom: 8px;
-}
 
 .section h2 {
     font-size: clamp(32px, 4.5vw, 44px);
@@ -447,6 +418,11 @@ a:hover {
     margin-top: 14px;
     font-size: 15px;
     color: var(--muted);
+}
+
+.card-single {
+    margin-top: 40px;
+    max-width: 640px;
 }
 
 .cards-2 {
@@ -699,9 +675,6 @@ a:hover {
     color: #fff;
 }
 
-.section-dark .section-label {
-    color: #ff4d4d;
-}
 
 .contact-grid {
     display: grid;
