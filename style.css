@@ -227,26 +227,12 @@ a:hover {
     animation: hero-in .9s ease-out both;
 }
 
-.hero-eyebrow {
-    display: inline-block;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: .12em;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, .7);
-    padding: 6px 14px;
-    border: 1px solid rgba(255, 255, 255, .18);
-    border-radius: 999px;
-    background: rgba(255, 255, 255, .04);
-    backdrop-filter: blur(6px);
-}
 
 .hero h1 {
     font-size: clamp(44px, 8vw, 84px);
     font-weight: 800;
     letter-spacing: -.035em;
     line-height: 1.05;
-    margin-top: 28px;
 }
 
 .hero-subtitle {
@@ -270,41 +256,9 @@ a:hover {
     margin-top: 36px;
 }
 
-.profiles {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 32px;
-}
 
-.profiles a {
-    width: 44px;
-    height: 44px;
-    display: grid;
-    place-items: center;
-    border-radius: 50%;
-    color: #fff;
-    font-size: 18px;
-    border: 1px solid rgba(255, 255, 255, .2);
-    background: rgba(255, 255, 255, .04);
-    text-decoration: none;
-    transition: transform .2s, background-color .2s, border-color .2s;
-}
 
-.profiles a:hover {
-    color: #fff;
-    background: var(--red);
-    border-color: var(--red);
-    transform: translateY(-3px);
-}
 
-.lattes-icon {
-    font-weight: 800;
-    font-size: .95em;
-    font-family: Georgia, "Times New Roman", serif;
-    line-height: 1;
-}
 
 .scroll-down {
     position: absolute;
@@ -817,8 +771,7 @@ a:hover {
     transition: transform .2s, background-color .2s, border-color .2s;
 }
 
-.profiles-list a i,
-.profiles-list a .lattes-icon {
+.profiles-list a i {
     width: 20px;
     text-align: center;
     color: #ff4d4d;
@@ -948,9 +901,6 @@ footer {
         padding-bottom: 110px;
     }
 
-    .hide-sm {
-        display: none;
-    }
 
     .bio-text p,
     .lead {
