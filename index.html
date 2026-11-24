@@ -2,121 +2,288 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+  <title>Ortenilton Filho · Mathematics, University of Coimbra</title>
+  <meta name="description" content="Ortenilton Filho, Ph.D. student in Mathematics at the University of Coimbra. Research on nonlinear PDEs, Hamilton–Jacobi equations, viscosity solutions and numerical schemes." />
+  <meta name="author" content="Ortenilton Filho" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ortenilton Filho · Mathematics" />
+  <meta property="og:description" content="Ph.D. student in Mathematics at the University of Coimbra. Nonlinear PDEs, viscosity solutions and numerical analysis." />
+  <meta name="theme-color" content="#111111" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111'/%3E%3Ccircle cx='46' cy='18' r='7' fill='%23cc0000'/%3E%3Ctext x='29' y='45' font-family='Arial,sans-serif' font-size='26' font-weight='700' fill='%23fff' text-anchor='middle'%3EOF%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css?family=San+Francisco" rel="stylesheet">
-  <title>Ortenilton Filho</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <a class="skip-link" href="#biografia">Skip to content</a>
+
   <!-- Header -->
-  <header>
-    <div class="menu-header">
-      <nav>
-        <ul>
-          <li><a href="#biografia"><i class="fa-solid fa-user"></i> SHORT BIO</a></li>
-          <li><a href="#publicacoes"><i class="fa-solid fa-book"></i> PUBLICATIONS</a></li>
-          <li><a href="#pesquisa"><i class="fa-solid fa-magnifying-glass"></i> RESEARCH</a></li>
-          <li><a href="#contato"><i class="fa-solid fa-phone"></i> CONTACT</a></li>
-        </ul>
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#top" class="brand">Ortenilton Filho</a>
 
-        <!--<div class="redes-sociais">
-          <a href="https://cmuc.mat.uc.pt/rdonweb/" target="_blank" rel="noopener noreferrer">
-            <img src="./img/logo-UC.png" alt="UC Logo">
-          </a>
-        </div>-->
-      </nav>
-    </div>
-
-    <div class="container-btn" id="container-btn">
-      <button onclick="animarMenu()" class="btn-menu" id="btn-menu">
-        MENU <i class="fa-solid fa-bars"></i>
+      <button class="btn-menu" id="btn-menu" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
       </button>
-    </div>
 
-    <div class="menu-mobile" id="menu-mobile">
-      <nav>
-        <!--<div class="redes-sociais">
-          <a href="https://cmuc.mat.uc.pt/rdonweb/" target="_blank" rel="noopener noreferrer">
-            <img src="./img/logo-UC.png" alt="UC Logo">
-          </a>
-        </div>-->
-
+      <nav class="main-nav" id="main-nav" aria-label="Main">
         <ul>
-          <li><a href="#biografia"><i class="fa-solid fa-user"></i> SHORT BIO</a></li>
-          <li><a href="#publicacoes"><i class="fa-solid fa-book"></i> PUBLICATIONS</a></li>
-          <li><a href="#pesquisa"><i class="fa-solid fa-magnifying-glass"></i> RESEARCH</a></li>
-          <li><a href="#contato"><i class="fa-solid fa-phone"></i> CONTACT</a></li>
+          <li><a href="#biografia">Bio</a></li>
+          <li><a href="#pesquisa">Research</a></li>
+          <li><a href="#publicacoes">Publications</a></li>
+          <li><a href="#palestras">Talks</a></li>
+          <li><a href="#ensino">Teaching</a></li>
+          <li><a href="#contato">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Container -->
-  <div class="container">
-    <h2>Ortenilton Filho</h2>
-    <h4> Ph.D. student in Mathematics @ University of Coimbra</h4>
-    <a class="btnBio" href="#biografia">
-      <i class="fa-solid fa-circle-arrow-down fa-beat fa-lg" style="color: #ff0000; font-size: 40px;"></i>
+  <!-- Hero -->
+  <div class="hero" id="top">
+    <div class="bolhas" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow"><span class="hide-sm">Department of Mathematics · </span>University of Coimbra</p>
+      <h1>Ortenilton Filho</h1>
+      <p class="hero-subtitle">Ph.D. student in Mathematics @ University of Coimbra</p>
+      <p class="hero-topics">Viscosity solutions · Hamilton–Jacobi equations · Numerical analysis of PDEs</p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="CV-Ortenilton.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> Download CV</a>
+        <a class="btn btn-ghost" href="#contato"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Get in touch</a>
+      </div>
+
+      <ul class="profiles profiles-hero" aria-label="Academic profiles">
+        <li><a href="https://orcid.org/0009-0009-6346-9256" target="_blank" rel="noopener" aria-label="ORCID" title="ORCID"><i class="fa-brands fa-orcid" aria-hidden="true"></i></a></li>
+        <li><a href="https://scholar.google.com/citations?user=ebX_MfwAAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.researchgate.net/profile/Ortenilton-Filho" target="_blank" rel="noopener" aria-label="ResearchGate" title="ResearchGate"><i class="fa-brands fa-researchgate" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/ortenilton-filho-178341162/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+        <li><a href="http://lattes.cnpq.br/7643685200431694" target="_blank" rel="noopener" aria-label="Currículo Lattes" title="Currículo Lattes"><span class="lattes-icon" aria-hidden="true">L</span></a></li>
+      </ul>
+    </div>
+
+    <a class="scroll-down" href="#biografia" aria-label="Scroll to bio">
+      <i class="fa-solid fa-circle-arrow-down" aria-hidden="true"></i>
     </a>
-    <div class="bolhas"></div>
   </div>
 
-  <!-- Seção Biografia -->
-  <section id="biografia" class="active">
-    <div class="container-biografia">
-      <img src="./img/PerfilPro.jpg" width="20%" alt="img-perfil">
-      <h2>SHORT BIO</h2>
-      <p>Hi! I am Ortenilton, a Ph.D. student in Mathematics at the <a target="_blank" href="https://cmuc.mat.uc.pt/rdonweb/">University of Coimbra</a>, under the joint supervision of <a target="_blank" href="https://www.mat.uc.pt/~edgard.pimentel/">Edgard Pimentel</a> and <a target="_blank" href="https://www.mat.uc.pt/~ecs/">Ercília Sousa</a>. My research focuses on the analysis of partial differential equations, particularly on the theory of viscosity solutions. My current work is centered on fractional vanishing viscosity and the numerical methods for related problems.
-      <br><br> 
-      I hold a Master's degree in Mathematics from <a target="_blank" href="http://www.mat.puc-rio.br">PUC-Rio</a> (Brazil, 2023), advised by <a target="_blank" href="http://www.mat.puc-rio.br/docente/boyan-sirakov">Boyan Sirakov</a> and <a target="_blank" href="https://sites.google.com/view/gustavoaraujo/home">Gustavo Araújo</a>. During my master's studies, I was funded through FAPERJ's Mestrado Nota 10 scholarship, a highly selective funding program.
-      <br><br> 
-      Before that, I completed my Bachelor's degree in Mathematics at the <a target="_blank" href="https://www.mat.ufs.br">Federal University of Sergipe</a> (Brazil, 2021). During my undergraduate studies, I participated three times in the Institutional Program for Scientific Initiation Scholarships (PIBIC) and once in the Institutional Program for Teaching Initiation Scholarships (PIBID).
-      <br><br> 
-      To download my complete CV, click <a target="_blank" href="CV-Ortenilton.pdf">here</a>.</p>
-    </div>
-  </section>
-
-  <!-- Seção Publicações -->
-  <section id="publicacoes">
-    <div class="container-publicacoes">
-      <h2>PUBLICATIONS</h2>
-      
-      <!-- Artigos publicados -->
-      <div class="categoria-publicacao">
-        <h3>Published papers in scientific journals</h3>
-        <ul class="lista-publicacoes">
-          <li>
-            <p>Estudo analítico do problema restrito dos três corpos</p>
-            <strong>Studies in Engineering and Exact Sciences</strong>, (2023)<br> 
-            w/ Gerson Cruz and Clésio Carlos<br>
-            <a target="_blank" href="https://ojs.studiespublicacoes.com.br/ojs/index.php/sees/article/view/1062/936">PDF</a> from the journal
-          </li>
-        </ul>
+  <main>
+    <!-- Bio -->
+    <section id="biografia" class="section">
+      <div class="wrap bio-grid">
+        <div class="bio-photo reveal">
+          <img src="./img/PerfilPro.jpg" width="280" height="280" alt="Portrait of Ortenilton Filho" />
+        </div>
+        <div class="bio-text reveal">
+          <p class="section-label">About me</p>
+          <h2>Short bio</h2>
+          <p>Hi! I am Ortenilton, a Ph.D. student in Mathematics at the <a target="_blank" rel="noopener" href="https://cmuc.mat.uc.pt/rdonweb/">University of Coimbra</a>, under the joint supervision of <a target="_blank" rel="noopener" href="https://www.mat.uc.pt/~edgard.pimentel/">Edgard Pimentel</a> and <a target="_blank" rel="noopener" href="https://www.mat.uc.pt/~ecs/">Ercília Sousa</a>. My research focuses on the analysis of partial differential equations, particularly on the theory of viscosity solutions. My current work is centered on fractional vanishing viscosity and the numerical methods for related problems.</p>
+          <p>I hold a Master's degree in Mathematics from <a target="_blank" rel="noopener" href="http://www.mat.puc-rio.br">PUC-Rio</a> (Brazil, 2023), advised by <a target="_blank" rel="noopener" href="http://www.mat.puc-rio.br/docente/boyan-sirakov">Boyan Sirakov</a> and <a target="_blank" rel="noopener" href="https://sites.google.com/view/gustavoaraujo/home">Gustavo Araújo</a>. During my master's studies, I was funded through FAPERJ's Mestrado Nota 10 scholarship, a highly selective funding program.</p>
+          <p>Before that, I completed my Bachelor's degree in Mathematics at the <a target="_blank" rel="noopener" href="https://www.mat.ufs.br">Federal University of Sergipe</a> (Brazil, 2021). During my undergraduate studies, I participated three times in the Institutional Program for Scientific Initiation Scholarships (PIBIC) and once in the Institutional Program for Teaching Initiation Scholarships (PIBID).</p>
+          <a class="btn btn-primary btn-small" href="CV-Ortenilton.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> Download my complete CV</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Seção Research -->
-  <section id="pesquisa">
-    <div class="container-pesquisa">
-      <h2>RESEARCH</h2>
-      <p>My research focuses on the analysis of nonlinear partial differential equations, particularly Hamilton-Jacobi equations and the theory of viscosity solutions. My current interests include vanishing viscosity methods, nonlocal and fractional equations, regularity theory, and the development and analysis of numerical schemes for nonlinear PDEs.</p>
-    </div>
-  </section>
+    <!-- Research -->
+    <section id="pesquisa" class="section section-alt">
+      <div class="wrap">
+        <p class="section-label reveal">What I work on</p>
+        <h2 class="reveal">Research</h2>
+        <p class="lead reveal">My research focuses on the analysis of nonlinear partial differential equations, particularly Hamilton–Jacobi equations and the theory of viscosity solutions. My current interests include vanishing viscosity methods, nonlocal and fractional equations, regularity theory, and the development and analysis of numerical schemes for nonlinear PDEs.</p>
 
-  <!-- Seção contato -->
-  <section id="contato">
-    <div class="container-contato">
-      <h2>CONTACT</h2>
-      <h4> Department of Mathematics - University of Coimbra</h4>
-      <p>
-        3000-143 Coimbra, Portugal <br />
-        ortenilton[at]mat[dot]uc[dot]pt / orteniltonfilho[at]gmail[dot]com <br />
-      </p>
-    </div>
-  </section>
+        <ul class="tags reveal" aria-label="Research topics">
+          <li>Viscosity solutions</li>
+          <li>Hamilton–Jacobi equations</li>
+          <li>Vanishing viscosity</li>
+          <li>Nonlocal &amp; fractional equations</li>
+          <li>Regularity theory</li>
+          <li>Numerical schemes for nonlinear PDEs</li>
+        </ul>
+
+        <div class="cards-2">
+          <article class="card reveal">
+            <h3><i class="fa-solid fa-diagram-project" aria-hidden="true"></i> Current work</h3>
+            <ul class="plain-list">
+              <li>Vanishing viscosity rates via the nonlinear adjoint method</li>
+              <li>Numerical schemes for nonlocal Hamilton–Jacobi equations with non-symmetric kernels</li>
+              <li>Numerical schemes for fractional vanishing viscosity methods for Hamilton–Jacobi equations</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <h3><i class="fa-solid fa-award" aria-hidden="true"></i> Fellowships</h3>
+            <ul class="plain-list dated">
+              <li><span class="date">2023 – now</span> Ph.D. Fellowship, Fundação para a Ciência e a Tecnologia (FCT)</li>
+              <li><span class="date">2022 – 2023</span> FAPERJ Fellowship – Mestrado Nota 10</li>
+              <li><span class="date">2021 – 2022</span> Master's Fellowship, CAPES</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publicacoes" class="section">
+      <div class="wrap">
+        <p class="section-label reveal">Papers</p>
+        <h2 class="reveal">Publications</h2>
+
+        <h3 class="subhead reveal">Published papers in scientific journals</h3>
+        <ol class="pub-list">
+          <li class="pub card reveal">
+            <span class="pub-year">2023</span>
+            <div class="pub-body">
+              <h4 class="pub-title">Estudo analítico do problema restrito dos três corpos</h4>
+              <p class="pub-translation">Analytical study of the restricted three-body problem</p>
+              <p class="pub-meta">with Clésio Carlos and Gerson Cruz · <em>Studies in Engineering and Exact Sciences</em> (2023)</p>
+              <div class="pub-links">
+                <a class="chip-link" target="_blank" rel="noopener" href="https://ojs.studiespublicacoes.com.br/ojs/index.php/sees/article/view/1062/936"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i> PDF</a>
+                <a class="chip-link" target="_blank" rel="noopener" href="https://ojs.studiespublicacoes.com.br/ojs/index.php/sees/article/view/1062"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Journal page</a>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Talks -->
+    <section id="palestras" class="section section-alt">
+      <div class="wrap">
+        <p class="section-label reveal">Talks &amp; events</p>
+        <h2 class="reveal">Talks and conferences</h2>
+
+        <h3 class="subhead reveal">Talks and presentations</h3>
+        <ol class="timeline">
+          <li class="reveal">
+            <span class="date">Nov 2026</span>
+            <div>
+              <p class="item-title">Vanishing viscosity rates via the Nonlinear adjoint method</p>
+              <p class="item-meta"><span class="badge">Contributed talk</span> Nonlinear PDEs in Salzburg 2026 · Paris Lodron University of Salzburg, Austria</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="date">Sep 2026</span>
+            <div>
+              <p class="item-title">Vanishing viscosity rates via the Nonlinear adjoint method</p>
+              <p class="item-meta"><span class="badge">Oral presentation</span> Encontro Nacional da Sociedade Portuguesa de Matemática (ENSPM26) · Instituto Superior Técnico, Lisbon, Portugal</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="date">Sep 2026</span>
+            <div>
+              <p class="item-title">A numerical scheme for nonlocal Hamilton–Jacobi equations with non-symmetric kernels</p>
+              <p class="item-meta"><span class="badge">Oral presentation</span> Encontro Nacional da Sociedade Portuguesa de Matemática (ENSPM26) · Instituto Superior Técnico, Lisbon, Portugal</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="date">Jul 2025</span>
+            <div>
+              <p class="item-title">A numerical scheme for the fractional vanishing viscosity methods for Hamilton–Jacobi equations</p>
+              <p class="item-meta"><span class="badge badge-muted">Poster</span> Nonlinear PDEs in Guimarães 2025 · Universidade do Minho, Guimarães, Portugal</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="cards-2">
+          <article class="card reveal">
+            <h3><i class="fa-solid fa-people-group" aria-hidden="true"></i> Organization</h3>
+            <ul class="plain-list dated">
+              <li><span class="date">Sep 2026</span> Organizer, thematic session “Análise numérica na interseção das soluções de viscosidade, problemas não-variacionais e modelos não-lineares”, ENSPM26, Instituto Superior Técnico, Lisbon</li>
+              <li><span class="date">2024 – 2025</span> Organizer, Research Seminar Program (Ph.D. student seminar), University of Coimbra</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <h3><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Recent conferences</h3>
+            <ul class="plain-list dated">
+              <li><span class="date">Nov 2026</span> Nonlinear PDEs in Salzburg 2026, Austria</li>
+              <li><span class="date">Sep 2026</span> ENSPM26, Lisbon, Portugal</li>
+              <li><span class="date">Jul 2025</span> Nonlinear PDEs in Guimarães 2025, Portugal</li>
+              <li><span class="date">Jul 2024</span> Regularity theory and free boundary problems: from PDE to interfaces, Coimbra, Portugal</li>
+              <li><span class="date">Jan 2024</span> CMUC Analysis Day, Coimbra, Portugal</li>
+            </ul>
+            <p class="card-note">Full list in my <a href="CV-Ortenilton.pdf" target="_blank" rel="noopener">CV</a>.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Teaching -->
+    <section id="ensino" class="section">
+      <div class="wrap">
+        <p class="section-label reveal">In the classroom</p>
+        <h2 class="reveal">Teaching</h2>
+        <ol class="timeline">
+          <li class="reveal">
+            <span class="date">Sep 2026 – now</span>
+            <div>
+              <p class="item-title">Numerical Mathematics I</p>
+              <p class="item-meta"><span class="badge">Invited Assistant Lecturer</span> Department of Mathematics, University of Coimbra, Portugal</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="date">Nov 2020 – Feb 2021</span>
+            <div>
+              <p class="item-title">Real Analysis</p>
+              <p class="item-meta"><span class="badge badge-muted">Teaching Assistant</span> Department of Mathematics, Federal University of Sergipe, Brazil</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="date">Feb – Aug 2020</span>
+            <div>
+              <p class="item-title">REVIMAT: Mathematical Content Review</p>
+              <p class="item-meta"><span class="badge badge-muted">Mentor</span> Federal University of Sergipe, Brazil (two editions)</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="date">Aug 2018 – Jan 2020</span>
+            <div>
+              <p class="item-title">Teaching Initiation Fellowship (PIBID)</p>
+              <p class="item-meta"><span class="badge badge-muted">Fellow</span> CAPES · Federal University of Sergipe, Brazil</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contato" class="section section-dark">
+      <div class="wrap contact-grid">
+        <div class="reveal">
+          <p class="section-label">Get in touch</p>
+          <h2>Contact</h2>
+          <p class="contact-address">
+            <i class="fa-solid fa-building-columns" aria-hidden="true"></i>
+            Department of Mathematics – University of Coimbra<br />
+            3000-143 Coimbra, Portugal
+          </p>
+          <ul class="contact-emails">
+            <li>
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <a class="email-link" data-user="ortenilton" data-domain="mat.uc.pt" href="#contato">ortenilton[at]mat[dot]uc[dot]pt</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <a class="email-link" data-user="orteniltonfilho" data-domain="gmail.com" href="#contato">orteniltonfilho[at]gmail[dot]com</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="reveal">
+          <h3 class="contact-subhead">Academic profiles</h3>
+          <ul class="profiles-list">
+            <li><a href="https://orcid.org/0009-0009-6346-9256" target="_blank" rel="noopener"><i class="fa-brands fa-orcid" aria-hidden="true"></i> ORCID</a></li>
+            <li><a href="https://scholar.google.com/citations?user=ebX_MfwAAAAJ" target="_blank" rel="noopener"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Google Scholar</a></li>
+            <li><a href="https://www.researchgate.net/profile/Ortenilton-Filho" target="_blank" rel="noopener"><i class="fa-brands fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
+            <li><a href="https://www.linkedin.com/in/ortenilton-filho-178341162/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i> LinkedIn</a></li>
+            <li><a href="http://lattes.cnpq.br/7643685200431694" target="_blank" rel="noopener"><span class="lattes-icon" aria-hidden="true">L</span> Currículo Lattes</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <!-- Rodape -->
   <footer>
@@ -126,7 +293,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
