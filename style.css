@@ -45,6 +45,11 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Evita que o menu fixo cubra o título da seção ao navegar pelos links */
+section {
+    scroll-margin-top: 60px;
+}
+
 .menu-header {
     background-color: white;
     position: fixed;
@@ -392,6 +397,20 @@ footer {
 /* ========================================== */
 
 @media (max-width: 767px) {
+
+    /* Texto mais largo e alinhado à esquerda no celular */
+    .container-biografia p,
+    .container-pesquisa p,
+    .categoria-publicacao {
+        width: 88%;
+        font-size: 17px;
+        text-align: left;
+        line-height: 1.5;
+    }
+
+    .lista-publicacoes li {
+        text-align: left;
+    }
 
     .btn-menu {
         font-size: 20px;
